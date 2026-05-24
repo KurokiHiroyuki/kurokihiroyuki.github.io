@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shopee Maintenance Tool</title>
+  <style>
+    :root { color-scheme: light; }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: -apple-system, "Segoe UI", "Hiragino Kaku Gothic ProN", "Yu Gothic", Meiryo, sans-serif;
+      color: #1f2933;
+      background: #f4f6f8;
+      line-height: 1.7;
+    }
+    header {
+      background: linear-gradient(135deg, #ee4d2d, #ff7337);
+      color: #fff;
+      padding: 56px 24px;
+      text-align: center;
+    }
+    header h1 { margin: 0 0 8px; font-size: 2rem; }
+    header p { margin: 0; opacity: 0.95; }
+    main { max-width: 760px; margin: 0 auto; padding: 32px 24px 64px; }
+    section { background: #fff; border-radius: 12px; padding: 24px 28px; margin-bottom: 20px; box-shadow: 0 1px 4px rgba(0,0,0,0.06); }
+    h2 { font-size: 1.2rem; margin-top: 0; color: #ee4d2d; }
+    ul { padding-left: 1.2em; }
+    code { background: #eef1f4; padding: 2px 6px; border-radius: 4px; font-size: 0.9em; }
+    footer { text-align: center; color: #8a94a0; font-size: 0.85rem; padding: 24px; }
+    a { color: #ee4d2d; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Shopee Maintenance Tool</h1>
+    <p>Shopee 出品メンテナンス支援ツール / Listing maintenance helper</p>
+  </header>
+  <main>
+    <section>
+      <h2>概要 / Overview</h2>
+      <p>
+        本ツールは、Shopee Open Platform API (v2) を利用して、自身が運営するショップの
+        出品商品情報を取得・整理し、カテゴリやSEOタイトルの改善案を作成・反映するための
+        個人用ユーティリティです。
+      </p>
+      <p>
+        This is a private utility that uses the Shopee Open Platform API (v2) to fetch and
+        organize the operator's own shop listings, and to prepare and apply improvements to
+        product categories and SEO titles.
+      </p>
+    </section>
+    <section>
+      <h2>主な機能 / Features</h2>
+      <ul>
+        <li>OAuth によるショップ連携とアクセストークンの自動更新</li>
+        <li>出品商品の一覧・詳細の取得とローカル保存（SQLite）</li>
+        <li>商品カテゴリ・SEOタイトルの最適化案の生成</li>
+      </ul>
+    </section>
+    <section>
+      <h2>API の利用範囲 / API usage</h2>
+      <p>
+        取得するのは運営者自身のショップデータのみで、商品情報の参照・更新に限られます。
+        認証情報はサーバーやリポジトリに保存・公開されません。
+      </p>
+      <p>
+        The tool accesses only the operator's own shop data, limited to reading and updating
+        product information. Credentials are never stored in or published to any repository.
+      </p>
+    </section>
+    <section>
+      <h2>お問い合わせ / Contact</h2>
+      <p>GitHub: <a href="https://github.com/KurokiHiroyuki">github.com/KurokiHiroyuki</a></p>
+    </section>
+  </main>
+  <footer>© 2026 KurokiHiroyuki — Shopee Maintenance Tool</footer>
+</body>
+</html>
